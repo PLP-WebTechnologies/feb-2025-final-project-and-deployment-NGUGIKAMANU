@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Wanderlust Travel</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Wanderlust</h1>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="blog.html" class="active">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <button class="mobile-menu-btn" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="blog-header">
+            <div class="container">
+                <h2>Travel Stories & Tips</h2>
+                <div class="blog-filter">
+                    <button class="filter-btn active" data-category="all">All Posts</button>
+                    <button class="filter-btn" data-category="Asia">Asia</button>
+                    <button class="filter-btn" data-category="Europe">Europe</button>
+                    <button class="filter-btn" data-category="Africa">Africa</button>
+                    <button class="filter-btn" data-category="Americas">Americas</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="blog-posts">
+            <div class="container">
+                <div class="blog-grid" id="blog-grid">
+                    <!-- Article 1 -->
+                    <article class="blog-card" data-category="Asia">
+                        <div class="blog-image">
+                            <img src="/api/placeholder/800/500" alt="Mountains in Japan">
+                        </div>
+                        <div class="blog-content">
+                            <span class="blog-category">Asia</span>
+                            <span class="blog-date">April 22, 2025</span>
+                            <h3>Hidden Gems of Japan</h3>
+                            <p>Beyond Tokyo and Kyoto, discover the serene countryside and mountainous regions that most tourists miss. From the ancient forests of Yakushima to the snow monkeys of Nagano.</p>
+                            <a href="#" class="read-more">Read Full Article</a>
+                        </div>
+                    </article>
+
+                    <!-- Article 2 -->
+                    <article class="blog-card" data-category="Europe">
+                        <div class="blog-image">
+                            <img src="/api/placeholder/800/500" alt="Coastal town in Italy">
+                        </div>
+                        <div class="blog-content">
+                            <span class="blog-category">Europe</span>
+                            <span class="blog-date">April 15, 2025</span>
+                            <h3>A Week in the Italian Riviera</h3>
+                            <p>Colorful houses, crystal-clear waters, and the best pasta you'll ever taste - the Italian Riviera has it all. We spent a week exploring Cinque Terre and surrounding villages.</p>
+                            <a href="#" class="read-more">Read Full Article</a>
+                        </div>
+                    </article>
+
+                    <!-- Article 3 -->
+                    <article class="blog-card" data-category="Africa">
+                        <div class="blog-image">
+                            <img src="/api/placeholder/800/500" alt="Desert landscape in Morocco">
+                        </div>
+                        <div class="blog-content">
+                            <span class="blog-category">Africa</span>
+                            <span class="blog-date">April 8, 2025</span>
+                            <h3>Morocco: Desert and Cities</h3>
+                            <p>From the bustling souks of Marrakech to the vast Sahara, Morocco is a feast for the senses. Our two-week itinerary covers the best this North African gem has to offer.</p>
+                            <a href="#" class="read-more">Read Full Article</a>
+                        </div>
+                    </article>
+
+                    <!-- Article 4 -->
+                    <article class="blog-card" data-category="Americas">
+                        <div class="blog-image">
+                            <img src="/api/placeholder/800/500" alt="Mountains in Peru">
+                        </div>
+                        <div class="blog-content">
+                            <span class="blog-category">Americas</span>
+                            <span class="blog-date">March 30, 2025</span>
+                            <h3>Hiking the Inca Trail</h3>
+                            <p>Follow our footsteps on the legendary Inca Trail to Machu Picchu. Four days of challenging terrain, breathtaking views, and ancient history culminating at the Sun Gate.</p>
+                            <a href="#" class="read-more">Read Full Article</a>
+                        </div>
+                    </article>
+
+                    <!-- Article 5 -->
+                    <article class="blog-card" data-category="Asia">
+                        <div class="blog-image">
+                            <img src="/api/placeholder/800/500" alt="Street food in Thailand">
+                        </div>
+                        <div class="blog-content">
+                            <span class="blog-category">Asia</span>
+                            <span class="blog-date">March 23, 2025</span>
+                            <h3>Street Food Tour: Bangkok</h3>
+                            <p>Dive into Thailand's culinary scene with our comprehensive guide to Bangkok's best street food spots. From pad thai to mango sticky rice, these are the dishes you can't miss.</p>
+                            <a href="#" class="read-more">Read Full Article</a>
+                        </div>
+                    </article>
+
+                    <!-- Article 6 -->
+                    <article class="blog-card" data-category="Europe">
+                        <div class="blog-image">
+                            <img src="/api/placeholder/800/500" alt="Northern Lights in Iceland">
+                        </div>
+                        <div class="blog-content">
+                            <span class="blog-category">Europe</span>
+                            <span class="blog-date">March 15, 2025</span>
+                            <h3>Chasing the Northern Lights in Iceland</h3>
+                            <p>Our winter journey through Iceland in search of the elusive aurora borealis. Complete with tips on photography, best viewing locations, and what to pack for the cold.</p>
+                            <a href="#" class="read-more">Read Full Article</a>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="pagination">
+                    <button class="pagination-btn active">1</button>
+                    <button class="pagination-btn">2</button>
+                    <button class="pagination-btn">3</button>
+                    <button class="pagination-btn next">Next →</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>Wanderlust</h2>
+                    <p>Exploring the world one adventure at a time.</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3>Connect With Us</h3>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Facebook">FB</a>
+                        <a href="#" aria-label="Instagram">IG</a>
+                        <a href="#" aria-label="Twitter">TW</a>
+                        <a href="#" aria-label="Pinterest">PIN</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Wanderlust. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
